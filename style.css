@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+  
+.row {
+    display: flex;
+}
+  
+  /* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+.card {
+    background: #fdfdfd;
+    border-radius: 4px;
+    height: 90vh;
+    width: 80vw;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+body {
+    background: #6c63ff;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    color: #fff; /* Improved text contrast */
+}
+.photo1 {
+    background: #fdfdfd;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgb(255, 255, 255); /* Adjusted box shadow for depth */
+    display: flex;
+    object-fit: cover;
+    max-width: 10%;
+    max-height: 10%;
+}  
+@media only screen and (min-width: 1080px) {
+    .photo1 {
+      justify-content: right;
+    }
+    img.photo1 {
+      width: 20%;
+      max-width: 15vw;
+      max-height: unset;
+    }
+  }
+  
+@media only screen and (max-height: 1424px) {
+    .photo1 {
+      justify-content: right;
+    }
+    img.photo1 {
+      width: 30%;
+      max-width: 35vw;
+      max-height: unset;
+    }
+  }
+
+.text{
+    text-align: center;
+    padding: 1em;
+    color: #333;
+    position: relative;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+body.play-music {
+    animation: fadeIn 2s ease-in-out; /* Adjust the animation duration and timing function as needed */
+}
