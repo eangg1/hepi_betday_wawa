@@ -21,7 +21,7 @@
 .card {
     background: #fdfdfd;
     border-radius: 4px;
-    height: 90vh;
+    height: 95vh;
     width: 80vw;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
     display: flex;
@@ -84,7 +84,23 @@ body {
       opacity: 1;
     }
 }
-  
+
+.playlist{
+  color: aliceblue;
+  text-decoration: none;
+  padding: 8px 25px;
+  background: #6c63ff;
+  border-radius: 50px;
+  border: 2px solid #6c63ff;
+  font-weight: 500;
+  transition: .3s;
+}
+
+.playlist:hover{
+  color: #6c63ff;
+  background: transparent;
+}
+
 body.play-music {
     animation: fadeIn 2s ease-in-out;
 }
